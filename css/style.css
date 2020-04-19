@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body,html {
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+
+}
+
+.wrap{
+	margin: 0 auto;
+	width: 1920px;
+}
+
+.w1200 {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+h1{
+	font-size: 80px;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	padding-bottom: 24px;
+	border-bottom: 2px solid #000;
+	line-height: 1.2;
+}
+
+.photo{
+	margin-bottom: 48px;
+}
+
+
+h2{
+	font-size: 32px;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
+	
+}
+
+h2 p{
+	display: inline;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 16px;
+	color: #A00404;
+
+}
+
+.pro ul{
+	font-size: 24px;
+	line-height: 36px;
+	margin-left: 48px;
+}
+
+.pro li{
+	margin-bottom: 32px;
+}
+
+.edu li{
+	margin-left: 48px;
+	font-size: 24px;
+	line-height: 1;
+}
+
+.education{
+	/* 讓偽元素以 ul 作為定位點，因此 ul 需要設定為“相對位置” */
+	position: relative;
+}
+.education-item{
+  	margin-bottom: 24px;
+}
+.education-item:before{
+  	content: "";
+	/* 偽元素需設定成“絕對位置” */
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #96A9C4;
+	border-radius: 50%;
+	left: 10px;
+	
+}
+.timeLine:after{
+	content: "";
+		/* 偽元素需設定成“絕對位置” */
+	position: absolute;
+	border-left: 1px solid #96A9C4;
+	/* 一定要加上 top, bottom 的值，線條才會有高度 */
+		/* 設定 top 0px, bottom 0px 就會剛好撐滿整個 ul 的高度 */
+	top: 0px;
+	bottom: 18px;
+		/* 為了要讓線條對準圓心，因此需往左 16（圓圈和文字之間的距離）+ 8（圓圈的半徑）= 24px */
+	left: 18px;
+}
+
+.skills{
+	position: relative;
+	padding-top: 120px;
+	margin-bottom: 10px;
+}
+
+.bg-bottom{
+	height: 300px;
+	margin-top: 160px;
+	padding-top: 72px;
+}
+
+.bg-top{
+	height: 490px;
+	background:#415165; 
+	position: absolute;
+	top: 40px;
+	left:360px;
+}
+
+.skills h2{
+	color:#fff;
+	font-size: 32px;
+	line-height: 45px;
+	width: 980px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.skills p{
+	color: #FFF;
+}
+
+.skills ul{
+	border-left: 1px solid #96A9C4;
+	margin-left: 480px;
+	padding-left: 30px;
+	line-height: 2;
+	font-size: 24px;
+	color: #FFF;
+}
+
+/* 用偽元素做背景的方塊 */
+.bg-bottom:after {
+	content: "";
+	display: block;
+	height: 300px;
+	/* 做一個超級長的寬 */
+	width: 9999px;
+	/* 垂直置中定位 */
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	/* 推超級左邊 */
+	left: -999px;
+	background-color: #96A9C4;
+	z-index:-1;
+  }
+
+  .exp li{
+	border-left: 1px solid #96A9C4;
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	line-height: 2;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+  }
+
+  .hexschool{
+	  width: 684px;
+  }
+  .hexschool img{
+	  margin-top: 10px;
+  }
+
+  .hexschool p{
+	  font-size: 20px;
+	  font-weight: normal;
+  }
+  
+  .simtree img{
+	  margin-top: 10px;
+  }
+
+  .simtree p{
+	font-weight: normal;
+	font-size: 20px;
+  }
+
+  .footer{
+	  background: #415165;
+	  height: 430px;
+  }
+
+  .footer h2{
+	color:#fff;
+	font-size: 32px;
+	line-height: 45px;
+	width: 980px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 8px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.footer p{
+	color: #FFF;
+}
+
+.con{
+	line-height: 2;
+	font-size: 24px;
+	text-align: center;
+	color: #FFF;
+	margin-bottom: 30px;
+}
+
+.social-media{
+	text-align: center;
+}
+
+.social-media a{
+	padding-top: 100px;
+	margin-left: 10px;
+}
