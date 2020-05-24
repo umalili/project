@@ -4,12 +4,19 @@
 	<meta charset="UTF-8">
 	<title>履歷設計</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+ 	AOS.init();
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<div class="wrap">
 		<div class="header">
 			<div class="w1200">
-				<h1>Joanne<p>Chen</p></h1>
+				<h1 class="animate__animated animate__fadeInDown">Joanne<p>Chen</p></h1>
 				<div class="photo">
 				<a href="#"><img src="img/photo.png" alt=""></a>
 				</div>
@@ -17,8 +24,8 @@
 		</div>
 
 		<div class="pro w1200">
-			<h2>個人資料<p>PROFILE</p></h2>
-			<ul>
+			<h2 data-aos="fade-left">個人資料<p>PROFILE</p></h2>
+			<ul data-aos="fade-left">
 				<li>陳久安 Joanne Chen<p>1997-</p><p>應屆畢業生／接案設計師／UI 設計實習生</p></li>
 				<li>UI 設計修行中／立志當斜槓青年<p>獨立接案，內容涵蓋：</p>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</li>
 			</ul>
@@ -26,14 +33,14 @@
 		</div>
 
 		<div class="edu w1200">
-			<h2>學歷<p>EDUCATION</p></h2>
-			<ul class="education">
+			<h2 data-aos="fade-left">學歷<p>EDUCATION</p></h2>
+			<ul class="education" data-aos="fade-left">
 				<li class="education-item timeLine">國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
 				<li class="education-item">國立六腳高級中學 美術班 | 2013－2016</li>
 				</ul>
 			</div>
 
-		<div class="skills">
+		<div class="skills" data-aos="fade-left">
 			<div class="bg-bottom"></div>
 			<div class="bg-top w1200">
 				<h2>技能<p>SKILLS</p></h2>
@@ -49,7 +56,7 @@
 				</div>
 			</div>
 				
-		<div class="exp w1200">
+		<div class="exp w1200" data-aos="fade-left">
 			<h2>工作經驗<p>WORK EXPERIENCE</p></h2>
 			<ul>
 				<li class="hexschool">六角學院 視覺設計實習生 | 2019/07－2020/06
@@ -67,8 +74,8 @@
 		</div>
 
 		<div class="footer wrap">
-			<h2>聯絡方式<p>CONTACT METHOD</p></h2>
-			<ul class="con w1200">
+			<h2 class="animate__animated flipInY">聯絡方式<p>CONTACT METHOD</p></h2>
+			<ul class="con w1200 animate__animated flipInY">
 				<li>Mail：xxxd@hexschool.com</li>
 				<li>Phone：0910123456</li>
 				<li>Kaohsiung, Taiwan</li>
@@ -82,7 +89,6 @@
 				</li>
 			</ul>
 		</div>
-
 	</div>
 
 </body>
